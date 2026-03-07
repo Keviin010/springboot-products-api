@@ -26,7 +26,16 @@ API REST para gestionar productos con validación de datos y manejo global de ex
 - Inyección de dependencias por constructor
 - Validaciones con @Valid y Bean Validation
 - Manejo global de excepciones con @RestControllerAdvice
-- ResponseEntity para manejar respuestas HTTP
+- ResponseEntity para manejar respuestas HTTP correctamente
+- Respuestas de error en formato JSON
+
+## Ejemplo de error de validación
+```json
+{
+  "name": "El nombre es obligatorio",
+  "description": "La descripción es obligatoria"
+}
+```
 
 ## Requisitos
 

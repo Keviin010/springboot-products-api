@@ -1,16 +1,16 @@
 # springboot-products-api
 
-API REST para gestionar productos desarrollada con Spring Boot, Spring Data JPA y MySQL.
+API REST para gestionar productos con validación de datos y manejo global de excepciones, desarrollada con Spring Boot, Spring Data JPA y MySQL.
 
 ## Endpoints
 
 | Método | URL | Descripción |
 |--------|-----|-------------|
-| GET | /products | Lista todos los productos |
-| GET | /products/{id} | Busca un producto por id |
-| POST | /products | Crea un nuevo producto |
-| PUT | /products/{id} | Actualiza un producto |
-| DELETE | /products/{id} | Elimina un producto |
+| GET | / | Lista todos los productos |
+| GET | /{id} | Busca un producto por id |
+| POST | / | Crea un nuevo producto |
+| PUT | /{id} | Actualiza un producto |
+| DELETE | /{id} | Elimina un producto |
 
 ## Tecnologías
 
@@ -18,6 +18,15 @@ API REST para gestionar productos desarrollada con Spring Boot, Spring Data JPA 
 - Spring Boot 3.4.3
 - Spring Data JPA
 - MySQL
+- Bean Validation
+
+## Características
+
+- Arquitectura en capas (entity, repository, service, controller)
+- Inyección de dependencias por constructor
+- Validaciones con @Valid y Bean Validation
+- Manejo global de excepciones con @RestControllerAdvice
+- ResponseEntity para manejar respuestas HTTP
 
 ## Requisitos
 

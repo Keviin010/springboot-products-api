@@ -14,20 +14,20 @@ API REST para gestionar productos con validación de datos y manejo global de ex
 
 ## Tecnologías
 
-- Java 21
-- Spring Boot 3.4.3
-- Spring Data JPA
-- MySQL
-- Bean Validation
+-> Java 21
+-> Spring Boot 3.4.3
+-> Spring Data JPA
+-> MySQL
+-> Bean Validation
 
 ## Características
 
-- Arquitectura en capas (entity, repository, service, controller).
-- Inyección de dependencias por constructor.
-- Validaciones con @Valid y Bean Validation.
-- Manejo global de excepciones con @RestControllerAdvice.
-- ResponseEntity para manejar respuestas HTTP correctamente.
-- Respuestas de error en formato JSON.
+-> Arquitectura en capas (entity, repository, service, controller).
+-> Inyección de dependencias por constructor.
+-> Validaciones con @Valid y Bean Validation.
+-> Manejo global de excepciones con @RestControllerAdvice.
+-> ResponseEntity para manejar respuestas HTTP correctamente.
+-> Respuestas de error en formato JSON.
 
 ## Ejemplo de error de validación
 ```json
